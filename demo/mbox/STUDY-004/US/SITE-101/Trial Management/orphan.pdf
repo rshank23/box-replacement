@@ -1,0 +1,3 @@
+Demo document (not a real PDF).
+Study: STUDY-004 | Country: US | Site: SITE-101
+Expected outcome: EXCEPTION with failure reason NO_MAPPING (no active rule matches).

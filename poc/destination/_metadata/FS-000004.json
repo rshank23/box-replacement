@@ -1,0 +1,18 @@
+{
+  "id": "FS-000004",
+  "path": "C:\\Users\\RShank23\\OneDrive - JNJ\\Desktop\\veeva\\poc\\destination\\STUDY-003\\JP\\SITE-301\\Site Management\\Site Signature Sheet\\delegation-log.pdf",
+  "size": 137,
+  "checksum": "ca1eb7d2acc3d3ea18ae6c09501de819",
+  "unclassified": false,
+  "metadata": {
+    "name__v": "delegation-log.pdf",
+    "type__v": "Site Management",
+    "subtype__v": "Site Signature Sheet",
+    "classification__v": "Essential Document",
+    "study__v": "STUDY-003",
+    "study_country__v": "JP",
+    "site__v": "SITE-301",
+    "external_id__v": "f57e8970e7074ea79975fcba5b969fc19a6aa551d82f1902a050916f31409fe3",
+    "lifecycle__v": "TMF Document Lifecycle"
+  }
+}

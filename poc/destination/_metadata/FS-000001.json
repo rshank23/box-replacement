@@ -1,0 +1,18 @@
+{
+  "id": "FS-000001",
+  "path": "C:\\Users\\RShank23\\OneDrive - JNJ\\Desktop\\veeva\\poc\\destination\\STUDY-001\\DE\\SITE-102\\Central Trial Documents\\Investigator Brochure\\sae-report.pdf",
+  "size": 267,
+  "checksum": "d994db0dd30319bebbb05a1326591c9d",
+  "unclassified": false,
+  "metadata": {
+    "name__v": "sae-report.pdf",
+    "type__v": "Central Trial Documents",
+    "subtype__v": "Investigator Brochure",
+    "classification__v": "Supporting Document",
+    "study__v": "STUDY-001",
+    "study_country__v": "DE",
+    "site__v": "SITE-102",
+    "external_id__v": "fb0a006915a0d19edd539afd730224d20e0a532702c10a239b0e828944ad28af",
+    "lifecycle__v": "TMF Document Lifecycle"
+  }
+}

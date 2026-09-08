@@ -1,0 +1,5 @@
+Unrecognised study folder
+Study: STUDY-004 | Country: US | Site: SITE-101
+
+Expected: no mapping rule matches. With UNMAPPED_POLICY=unclassified the file is
+filed into unclassified/STUDY-004/US/SITE-101/ and raised in the failure queue.

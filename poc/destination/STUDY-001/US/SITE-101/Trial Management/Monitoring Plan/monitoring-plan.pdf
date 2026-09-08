@@ -1,0 +1,6 @@
+Monitoring Plan v3.0
+Study: STUDY-001 | Country: US | Site: SITE-101
+Category: Monitoring
+
+Expected: matched by the REGEX rule (.*/Monitoring/.*) and filed into
+destination/STUDY-001/US/SITE-101/Trial Management/Monitoring Plan/

@@ -1,0 +1,18 @@
+{
+  "id": "FS-000003",
+  "path": "C:\\Users\\RShank23\\OneDrive - JNJ\\Desktop\\veeva\\poc\\destination\\STUDY-001\\US\\SITE-101\\Trial Management\\Trial Master File Plan\\tmf-plan.pdf",
+  "size": 262,
+  "checksum": "f04950f51d189f9c0ca06c3767333982",
+  "unclassified": false,
+  "metadata": {
+    "name__v": "tmf-plan.pdf",
+    "type__v": "Trial Management",
+    "subtype__v": "Trial Master File Plan",
+    "classification__v": "Essential Document",
+    "study__v": "STUDY-001",
+    "study_country__v": "US",
+    "site__v": "SITE-101",
+    "external_id__v": "4474c8fd953525c4df6335e65280a322643d32f5cef54b565a8a5babeb6d66f6",
+    "lifecycle__v": "TMF Document Lifecycle"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "FS-000002",
+  "path": "C:\\Users\\RShank23\\OneDrive - JNJ\\Desktop\\veeva\\poc\\destination\\STUDY-001\\US\\SITE-101\\Trial Management\\Monitoring Plan\\monitoring-plan.pdf",
+  "size": 235,
+  "checksum": "24b42bfcff5bb37f2cfbab974322aa21",
+  "unclassified": false,
+  "metadata": {
+    "name__v": "monitoring-plan.pdf",
+    "type__v": "Trial Management",
+    "subtype__v": "Monitoring Plan",
+    "classification__v": "Essential Document",
+    "study__v": "STUDY-001",
+    "study_country__v": "US",
+    "site__v": "SITE-101",
+    "external_id__v": "41cec548a51a2c6e46b9c3d944bb3bea05dad0821dd716980accda0db7652430",
+    "lifecycle__v": "TMF Document Lifecycle"
+  }
+}

@@ -1,0 +1,101 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:14-alpine
+        env:
+          POSTGRES_DB: mbox_vtmf
+          POSTGRES_USER: app
+          POSTGRES_PASSWORD: app
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U app -d mbox_vtmf"
+          --health-interval 5s --health-timeout 3s --health-retries 20
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install
+        run: python -m pip install -e ".[dev]"
+
+      - name: Lint
+        run: ruff check app tests scripts db
+
+      - name: Unit and integration tests
+        run: pytest --cov=app --cov-report=term-missing
+
+      - name: Apply migrations against PostgreSQL
+        env:
+          DB_DSN: postgresql+psycopg2://app:app@localhost:5432/mbox_vtmf
+        run: alembic -c db/alembic.ini upgrade head
+
+      - name: Verify the audit trail is immutable at the database level
+        env:
+          PGPASSWORD: app
+        run: |
+          psql -h localhost -U app -d mbox_vtmf -c \
+            "INSERT INTO audit_trail (action, performed_by, source_system) VALUES ('UPLOAD','ci','ci');"
+          if psql -h localhost -U app -d mbox_vtmf -c "DELETE FROM audit_trail;" 2>/dev/null; then
+            echo "audit_trail accepted a DELETE - Part 11 control failed"; exit 1
+          fi
+          echo "audit_trail correctly rejected DELETE"
+
+      - name: Export the OpenAPI contract
+        env:
+          DB_DSN: postgresql+psycopg2://app:app@localhost:5432/mbox_vtmf
+        run: |
+          python -c "import json; from app.services.integration_api.main import app; \
+            open('openapi.json','w').write(json.dumps(app.openapi(), indent=2))"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: openapi
+          path: openapi.json
+
+  frontend:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Install
+        run: npm install
+
+      - name: Type check
+        run: npm run typecheck
+
+      - name: Build
+        run: npm run build
+
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build the service image
+        run: docker build -f deploy/Dockerfile -t mbox-vtmf:ci .
+      - name: Build the frontend image
+        run: docker build -f frontend/Dockerfile -t mbox-vtmf-ui:ci frontend

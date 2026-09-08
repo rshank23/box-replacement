@@ -1,0 +1,18 @@
+{
+  "id": "FS-000005",
+  "path": "C:\\Users\\RShank23\\OneDrive - JNJ\\Desktop\\veeva\\poc\\destination\\STUDY-003\\JP\\SITE-301\\Site Management\\Site Signature Sheet\\signature-sheet.pdf",
+  "size": 199,
+  "checksum": "ddde4e5697de10051829369fa9e33866",
+  "unclassified": false,
+  "metadata": {
+    "name__v": "signature-sheet.pdf",
+    "type__v": "Site Management",
+    "subtype__v": "Site Signature Sheet",
+    "classification__v": "Essential Document",
+    "study__v": "STUDY-003",
+    "study_country__v": "JP",
+    "site__v": "SITE-301",
+    "external_id__v": "ecd8ee09f894e7e89f67dd85c7650aa1f957ac568aa9c3a7827f63bd0d610243",
+    "lifecycle__v": "TMF Document Lifecycle"
+  }
+}

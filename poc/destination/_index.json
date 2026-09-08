@@ -1,0 +1,158 @@
+{
+  "sequence": 9,
+  "documents": {
+    "FS-000001": {
+      "id": "FS-000001",
+      "path": "C:\\Users\\RShank23\\OneDrive - JNJ\\Desktop\\veeva\\poc\\destination\\STUDY-001\\DE\\SITE-102\\Central Trial Documents\\Investigator Brochure\\sae-report.pdf",
+      "size": 267,
+      "checksum": "d994db0dd30319bebbb05a1326591c9d",
+      "unclassified": false,
+      "metadata": {
+        "name__v": "sae-report.pdf",
+        "type__v": "Central Trial Documents",
+        "subtype__v": "Investigator Brochure",
+        "classification__v": "Supporting Document",
+        "study__v": "STUDY-001",
+        "study_country__v": "DE",
+        "site__v": "SITE-102",
+        "external_id__v": "fb0a006915a0d19edd539afd730224d20e0a532702c10a239b0e828944ad28af",
+        "lifecycle__v": "TMF Document Lifecycle"
+      }
+    },
+    "FS-000002": {
+      "id": "FS-000002",
+      "path": "C:\\Users\\RShank23\\OneDrive - JNJ\\Desktop\\veeva\\poc\\destination\\STUDY-001\\US\\SITE-101\\Trial Management\\Monitoring Plan\\monitoring-plan.pdf",
+      "size": 235,
+      "checksum": "24b42bfcff5bb37f2cfbab974322aa21",
+      "unclassified": false,
+      "metadata": {
+        "name__v": "monitoring-plan.pdf",
+        "type__v": "Trial Management",
+        "subtype__v": "Monitoring Plan",
+        "classification__v": "Essential Document",
+        "study__v": "STUDY-001",
+        "study_country__v": "US",
+        "site__v": "SITE-101",
+        "external_id__v": "41cec548a51a2c6e46b9c3d944bb3bea05dad0821dd716980accda0db7652430",
+        "lifecycle__v": "TMF Document Lifecycle"
+      }
+    },
+    "FS-000003": {
+      "id": "FS-000003",
+      "path": "C:\\Users\\RShank23\\OneDrive - JNJ\\Desktop\\veeva\\poc\\destination\\STUDY-001\\US\\SITE-101\\Trial Management\\Trial Master File Plan\\tmf-plan.pdf",
+      "size": 262,
+      "checksum": "f04950f51d189f9c0ca06c3767333982",
+      "unclassified": false,
+      "metadata": {
+        "name__v": "tmf-plan.pdf",
+        "type__v": "Trial Management",
+        "subtype__v": "Trial Master File Plan",
+        "classification__v": "Essential Document",
+        "study__v": "STUDY-001",
+        "study_country__v": "US",
+        "site__v": "SITE-101",
+        "external_id__v": "4474c8fd953525c4df6335e65280a322643d32f5cef54b565a8a5babeb6d66f6",
+        "lifecycle__v": "TMF Document Lifecycle"
+      }
+    },
+    "FS-000004": {
+      "id": "FS-000004",
+      "path": "C:\\Users\\RShank23\\OneDrive - JNJ\\Desktop\\veeva\\poc\\destination\\STUDY-003\\JP\\SITE-301\\Site Management\\Site Signature Sheet\\delegation-log.pdf",
+      "size": 137,
+      "checksum": "ca1eb7d2acc3d3ea18ae6c09501de819",
+      "unclassified": false,
+      "metadata": {
+        "name__v": "delegation-log.pdf",
+        "type__v": "Site Management",
+        "subtype__v": "Site Signature Sheet",
+        "classification__v": "Essential Document",
+        "study__v": "STUDY-003",
+        "study_country__v": "JP",
+        "site__v": "SITE-301",
+        "external_id__v": "f57e8970e7074ea79975fcba5b969fc19a6aa551d82f1902a050916f31409fe3",
+        "lifecycle__v": "TMF Document Lifecycle"
+      }
+    },
+    "FS-000005": {
+      "id": "FS-000005",
+      "path": "C:\\Users\\RShank23\\OneDrive - JNJ\\Desktop\\veeva\\poc\\destination\\STUDY-003\\JP\\SITE-301\\Site Management\\Site Signature Sheet\\signature-sheet.pdf",
+      "size": 199,
+      "checksum": "ddde4e5697de10051829369fa9e33866",
+      "unclassified": false,
+      "metadata": {
+        "name__v": "signature-sheet.pdf",
+        "type__v": "Site Management",
+        "subtype__v": "Site Signature Sheet",
+        "classification__v": "Essential Document",
+        "study__v": "STUDY-003",
+        "study_country__v": "JP",
+        "site__v": "SITE-301",
+        "external_id__v": "ecd8ee09f894e7e89f67dd85c7650aa1f957ac568aa9c3a7827f63bd0d610243",
+        "lifecycle__v": "TMF Document Lifecycle"
+      }
+    },
+    "FS-000006": {
+      "id": "FS-000006",
+      "path": "C:\\Users\\RShank23\\OneDrive - JNJ\\Desktop\\veeva\\poc\\unclassified\\STUDY-004\\US\\SITE-101\\misc-notes.docx",
+      "size": 159,
+      "checksum": "460003e834d56ce214af5a3d8f592d26",
+      "unclassified": true,
+      "metadata": {
+        "type__v": "Unclassified",
+        "study__v": "STUDY-004",
+        "study_country__v": "US",
+        "site__v": "SITE-101",
+        "lifecycle__v": "Inbox"
+      }
+    },
+    "FS-000007": {
+      "id": "FS-000007",
+      "path": "C:\\Users\\RShank23\\OneDrive - JNJ\\Desktop\\veeva\\poc\\unclassified\\STUDY-004\\US\\SITE-101\\orphan.pdf",
+      "size": 241,
+      "checksum": "4c2107274bdf98cc5718b36fbf471ad3",
+      "unclassified": true,
+      "metadata": {
+        "type__v": "Unclassified",
+        "study__v": "STUDY-004",
+        "study_country__v": "US",
+        "site__v": "SITE-101",
+        "lifecycle__v": "Inbox"
+      }
+    },
+    "FS-000008": {
+      "id": "FS-000008",
+      "path": "C:\\Users\\RShank23\\OneDrive - JNJ\\Desktop\\veeva\\poc\\unclassified\\STUDY-004\\US\\SITE-101\\misc-notes (2).docx",
+      "size": 159,
+      "checksum": "460003e834d56ce214af5a3d8f592d26",
+      "unclassified": true,
+      "metadata": {
+        "type__v": "Unclassified",
+        "study__v": "STUDY-004",
+        "study_country__v": "US",
+        "site__v": "SITE-101",
+        "lifecycle__v": "Inbox"
+      }
+    },
+    "FS-000009": {
+      "id": "FS-000009",
+      "path": "C:\\Users\\RShank23\\OneDrive - JNJ\\Desktop\\veeva\\poc\\unclassified\\STUDY-004\\US\\SITE-101\\orphan (2).pdf",
+      "size": 241,
+      "checksum": "4c2107274bdf98cc5718b36fbf471ad3",
+      "unclassified": true,
+      "metadata": {
+        "type__v": "Unclassified",
+        "study__v": "STUDY-004",
+        "study_country__v": "US",
+        "site__v": "SITE-101",
+        "lifecycle__v": "Inbox"
+      }
+    }
+  },
+  "by_external_id": {
+    "fb0a006915a0d19edd539afd730224d20e0a532702c10a239b0e828944ad28af": "FS-000001",
+    "41cec548a51a2c6e46b9c3d944bb3bea05dad0821dd716980accda0db7652430": "FS-000002",
+    "4474c8fd953525c4df6335e65280a322643d32f5cef54b565a8a5babeb6d66f6": "FS-000003",
+    "f57e8970e7074ea79975fcba5b969fc19a6aa551d82f1902a050916f31409fe3": "FS-000004",
+    "ecd8ee09f894e7e89f67dd85c7650aa1f957ac568aa9c3a7827f63bd0d610243": "FS-000005"
+  }
+}

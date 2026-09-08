@@ -1,0 +1,37 @@
+groups:
+  - name: mbox-vtmf
+    rules:
+      - alert: MBoxFolderApproachingRetention
+        expr: folder_age_days >= 60
+        for: 10m
+        labels: { severity: warning }
+        annotations:
+          summary: "MBox folder {{ $labels.study }} is {{ $value }} days old (90-day retention)"
+
+      - alert: MBoxFolderCriticalRetention
+        expr: folder_age_days >= 75
+        for: 5m
+        labels: { severity: critical }
+        annotations:
+          summary: "MBox folder {{ $labels.study }} is {{ $value }} days old; archive before deletion"
+
+      - alert: FailureQueueBacklog
+        expr: failure_queue_depth > 25
+        for: 15m
+        labels: { severity: warning }
+        annotations:
+          summary: "Failure queue depth is {{ $value }}"
+
+      - alert: VaultCircuitBreakerOpen
+        expr: vault_circuit_breaker_open == 1
+        for: 1m
+        labels: { severity: critical }
+        annotations:
+          summary: "Veeva Vault circuit breaker is open; uploads are halted"
+
+      - alert: WatcherStalled
+        expr: time() - watcher_last_run_timestamp > 7200
+        for: 10m
+        labels: { severity: critical }
+        annotations:
+          summary: "The MBox watcher has not completed a scan in over two hours"

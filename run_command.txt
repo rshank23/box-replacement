@@ -1,0 +1,46 @@
+HOW TO START THIS PROJECT LOCALLY (no Docker/Postgres required)
+=================================================================
+Open TWO PowerShell terminals: one for the backend (API), one for the frontend (UI).
+Run the commands in each terminal in order, top to bottom.
+
+------------------------------------------------------------
+TERMINAL 1 - BACKEND API (http://localhost:8080)
+------------------------------------------------------------
+cd "C:\Users\RShank23\OneDrive - JNJ\Desktop\veeva"
+.\.venv\Scripts\Activate.ps1
+uvicorn app.services.integration_api.main:app --host 0.0.0.0 --port 8080 --reload
+
+------------------------------------------------------------
+TERMINAL 2 - FRONTEND UI (http://localhost:5173)
+------------------------------------------------------------
+cd "C:\Users\RShank23\OneDrive - JNJ\Desktop\veeva\frontend"
+npm run dev
+
+------------------------------------------------------------
+THEN
+------------------------------------------------------------
+Open http://localhost:5173/login in your browser and sign in with any
+email + role (dev-token login is enabled via .env DEV_TOKEN_ENABLED=true).
+
+------------------------------------------------------------
+NOTES / ONE-TIME SETUP (already done, only needed again on a fresh clone)
+------------------------------------------------------------
+- .env was created at the repo root from .env.example, with:
+    DEV_TOKEN_ENABLED=true
+    DB_DSN=sqlite+aiosqlite:///./dev.db      (Postgres/Docker not available on this machine)
+    VAULT_EXPECTED_VAULT_ID commented out (blank int values are invalid)
+- The SQLite schema was created once via:
+    .\.venv\Scripts\python.exe scripts\dev_bootstrap.py
+  Re-run this only if you delete dev.db or need a fresh database.
+
+------------------------------------------------------------
+TROUBLESHOOTING
+------------------------------------------------------------
+- "Port already in use" -> an old process is still running. Find and stop it:
+    Get-NetTCPConnection -LocalPort 8080 -State Listen | Select OwningProcess
+    Get-NetTCPConnection -LocalPort 5173 -State Listen | Select OwningProcess
+    Stop-Process -Id <OwningProcess> -Force
+- 401 errors in the UI -> sign out and sign back in (old token expired/invalid).
+- 500 errors on dashboard -> backend can't reach the database; confirm DB_DSN in .env
+  points to sqlite+aiosqlite:///./dev.db (or that Postgres/Docker is running if you
+  switched back to Postgres).

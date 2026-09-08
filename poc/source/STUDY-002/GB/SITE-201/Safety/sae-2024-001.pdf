@@ -1,0 +1,6 @@
+SAE report 2024-001
+Study: STUDY-002 | Country: GB | Site: SITE-201
+Category: Safety
+
+Expected: mapped, but the classification "Regulated Correspondence" is not configured
+in VTMF. Routed to the SAM action queue with status SAM_PENDING and NOT filed.

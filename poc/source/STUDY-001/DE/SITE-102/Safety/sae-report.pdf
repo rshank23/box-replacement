@@ -1,0 +1,6 @@
+Serious Adverse Event narrative
+Study: STUDY-001 | Country: DE | Site: SITE-102
+Category: Safety
+
+Expected: falls through to the STUDY_DEFAULT rule for STUDY-001 and is filed into
+destination/STUDY-001/DE/SITE-102/Central Trial Documents/Investigator Brochure/
