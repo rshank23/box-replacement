@@ -15,3 +15,7 @@ htmlcov/
 *.log
 .staging/
 demo/mbox/**/*.zip
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
